@@ -1,0 +1,36 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the hourglassSum function below.
+def hourglassSum(arr):
+    smax = -9 * 7
+    for row in range(4):
+        for column in range(4):
+            r11 = arr[row][column]
+            r12 = arr[row][column + 1]
+            r13 = arr[row][column + 2]
+            r2 = arr[row + 1][column + 1]
+            r31 = arr[row + 2][column]
+            r32 = arr[row + 2][column + 1]
+            r33 = arr[row + 2][column + 2]
+            s = r11+r12+r13+r2+r31+r32+r33
+            smax=max(smax,s)
+    return(smax)
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    arr = []
+
+    for _ in range(6):
+        arr.append(list(map(int, input().rstrip().split())))
+
+    result = hourglassSum(arr)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
