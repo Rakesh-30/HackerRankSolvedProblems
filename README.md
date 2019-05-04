@@ -1,6 +1,6 @@
 # List Of Problems
 
-<span style="color:red">**Easy**</span>
+\textcolor{gray}{This is gray.}
 
 >2D Array - DS  ----  https://bit.ly/2M3GvV1
 
