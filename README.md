@@ -1,6 +1,6 @@
 # List Of Problems
 
-Easy
+<span style="color:red">**Easy**</span>
 
 >2D Array - DS  ----  https://bit.ly/2M3GvV1
 
