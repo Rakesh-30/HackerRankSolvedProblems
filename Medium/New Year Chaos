@@ -1,0 +1,35 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the minimumBribes function below.
+def minimumBribes(t):
+    for _ in range(t):
+        n = int(input())
+        q = list(map(int, input().split()))
+        swaps = [0] * n
+        swapped = True
+        
+        while swapped:
+            swapped = False
+            for i in range(n):
+                while i < n - 1 and q[i] > q[i + 1]:
+                    swaps[q[i] - 1] += 1
+                    q[i], q[i + 1] = q[i + 1], q[i]
+                    swapped = True
+                    i += 1
+        bribe = 0
+        for bribed in swaps:
+            bribe += bribed
+            if bribed > 2:
+                print('Too chaotic')
+                break
+        else:
+            print(bribe)
+if __name__ == '__main__':
+    t = int(input())
+    minimumBribes(t)
