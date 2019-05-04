@@ -1,4 +1,4 @@
-# HackerRankSolvedProblems
+# List Of Problems
 
 Easy
 
