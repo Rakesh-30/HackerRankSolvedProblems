@@ -1,6 +1,8 @@
 # List Of Problems
 
-\textcolor{gray}{This is gray.}
+```diff
++ Easy
+```
 
 >2D Array - DS  ----  https://bit.ly/2M3GvV1
 
@@ -20,14 +22,16 @@
 
 >Time Conversion  ----  https://www.hackerrank.com/challenges/time-conversion/problem
 
-Medium
-
+```diff
+ Medium
+```
 >New Year Chaos ----  https://bit.ly/2V1BzCX
 
 >Count Triplets ---- https://bit.ly/2J6QwTm
 
 >minimum Swaps 2 ---- https://bit.ly/2Jt7F6k
 
-Hard
-
+```diff
+- Hard
+```
 >Array Manipulation ---- https://bit.ly/2WwlF4M
